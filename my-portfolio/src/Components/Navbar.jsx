@@ -2,17 +2,24 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaBars, FaTimes} from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 //Navigation anchor tag
 const NavLinks = () => {
+    const [mode, setMode] = useState(false);
+
+    const handleClick = () =>{
+        setMode(!mode);
+    }
+
     return (
     <>
         <NavLink to="/">HOME</NavLink>
         <NavLink to="/about">ABOUT ME</NavLink>
         <NavLink to="/project">PROJECT</NavLink>
         <NavLink to="/contact">CONTACT</NavLink>
-        <button>
-            <MdLightMode />
+        <button onClick={handleClick}>{mode ? <MdOutlineDarkMode /> : <MdLightMode /> }
+            
         </button>
     </>
     );
@@ -26,7 +33,7 @@ const Navbar = () => {
     }
   return (
     <>
-    <header className='flex flex-wrap justify-center'>
+    <header className='flex flex-wrap justify-center bg-white'>
         <nav className='flex  h-24 items-center justify-between w-3/4 z-10 '>
             <NavLink to="/">
                 <img 
@@ -47,7 +54,7 @@ const Navbar = () => {
         </nav>
 
         {isOpen && (
-            <div className='flex flex-col w-full items-center gap-4 md:hidden'>
+            <div className='flex flex-col w-full items-center gap-4 lg:hidden'>
                 <NavLinks />
             </div>
         )}
