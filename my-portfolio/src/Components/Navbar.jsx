@@ -54,7 +54,7 @@ const Navbar = () => {
         </nav>
 
         {isOpen && (
-            <div className='flex flex-col w-full items-center gap-4 lg:hidden'>
+            <div className='flex flex-col w-full items-center gap-4 lg:hidden py-6'>
                 <NavLinks />
             </div>
         )}
