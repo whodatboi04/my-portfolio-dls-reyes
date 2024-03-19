@@ -7,6 +7,8 @@ export default {
       'mainColor': '#4B6043',
       'tBlack': '#1F1F29',
       'lightColor': '#89939E',
+      'tWhite': '#fff',
+      'lightGreen': '#8EB380'
     },
   },
   plugins: [],

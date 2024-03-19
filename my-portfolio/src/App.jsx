@@ -7,15 +7,23 @@ import { MdDownload } from "react-icons/md";
 
 const Home = () => {
   return (
-    <main className='flex flex-col md:flex-row border-solid border-2 border-black w-3/4 items-center m-auto h-screen '>
-        <section>
-          <h3 className='text-xs font-bold text-mainColor text-center lg:text-left'>FRONT-END DEVELOPER</h3>
-          <h1 className='text-4xl font-bold text-center lg:text-left'>Hello, my name <br/> is <span className='text-mainColor'>Ryan Mark</span></h1>
-          <p className='text-sm text-center lg:text-left text-lightColor mt-2'>an aspiring developer with passion for design,innovation, technologies
-          </p>
-          <div className='flex flex-col md:flex-row gap-4 mt-6  items-center'>
-            <button className='bg-mainColor w-52 p-2 rounded-full flex justify-center items-center gap-3'>Contact me <MdOutlineMail color='#fff' size={20}/></button>
-            <button className='bg-lightColor w-52 p-2 rounded-full flex justify-center items-center gap-3'>Download CV <MdDownload color='#fff' size={20}/></button>
+    <main className='flex flex-col md:flex-row w-3/4 items-center m-auto h-96 mt-10 md:mt-20 '>
+        <section className='flex flex-col gap-10 md:flex-row md:gap-72'>
+          <div>
+            <h3 className='text-xs md:text-sm font-bold text-mainColor text-center lg:text-left'>FRONT-END DEVELOPER</h3>
+            <h1 className='text-4xl md:text-6xl font-bold text-center lg:text-left'>Hello, my name <br/> is <span className='text-mainColor'>Ryan Mark</span></h1>
+            <p className='text-sm md:text-lg text-center lg:text-left text-lightColor mt-2'>an aspiring developer with passion for <br/> design,innovation, technologies
+            </p>
+            <div className='flex flex-col md:flex-row gap-4 mt-6  items-center'>
+              <button className='bg-mainColor w-52 p-2 rounded-full flex justify-center items-center gap-3 text-tWhite'>Contact me <MdOutlineMail color='#fff' size={20}/></button>
+              <button className='bg-lightColor w-52 p-2 rounded-full flex justify-center items-center gap-3 text-tWhite'>Download CV <MdDownload color='#fff' size={20}/></button>
+            </div>
+          </div>
+          <div>
+            <div className='bg-gradient-to-b from-mainColor to-lightGreen rounded-full w-72 md:w-80'>
+              <div></div>
+              <img src='../src/image/1-profile-img.png' className='w-72 md:ml-6 md:mb-6 md:w-80'/>
+            </div>
           </div>
         </section>
     </main>
