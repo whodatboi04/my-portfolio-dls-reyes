@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { HashLink as NavLink } from 'react-router-hash-link'
 import { FaBars, FaTimes} from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
 import { MdOutlineDarkMode } from "react-icons/md";
@@ -14,8 +14,8 @@ const NavLinks = () => {
 
     return (
     <>
-        <NavLink to="/">HOME</NavLink>
-        <NavLink to="/about">ABOUT ME</NavLink>
+        <NavLink to="#Home" smooth>HOME</NavLink>
+        <NavLink to="#aboutMe" smooth>ABOUT ME</NavLink>
         <NavLink to="/project">PROJECT</NavLink>
         <NavLink to="/contact">CONTACT</NavLink>
         <button onClick={handleClick}>{mode ? <MdOutlineDarkMode /> : <MdLightMode /> }
@@ -33,16 +33,18 @@ const Navbar = () => {
     }
   return (
     <>
-    <header className='flex flex-wrap justify-center bg-white'>
-        <nav className='flex  h-24 items-center justify-between w-3/4 z-10 '>
+    <header className='flex flex-wrap justify-center bg-white w-full'>
+        <nav className='flex  h-24 items-center justify-between w-5/6 z-10 '>
             <NavLink to="/">
                 <img 
                     src='../src/image/infinityrydev-high-resolution-logo-transparent.png' 
                     className='hidden md:flex w-64'
+                    alt='Desktop Logo'
                 />
                 <img 
                     src='../src/image/infinity.png'
                     className='md:hidden w-20'
+                    alt='Mobile Logo'
                 />
             </NavLink>
             <div className='hidden lg:flex gap-14'>
