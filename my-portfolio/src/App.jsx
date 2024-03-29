@@ -36,13 +36,13 @@ const Portfolio = () => {
           <div className='flex items-center w-3/4 m-auto lg:m-0'>
             <img 
               src='../src/image/my-img-front.png' 
-              className='rounded-full mt-10 w-72 m-auto md:w-96 lg:m-0'
+              className='rounded-full mt-10 w-72 m-auto md:w-[23rem] lg:m-0'
               alt='My Picture'
             />
           </div>
           <div className='flex flex-col mt-8 lg:jutify-center px-5 lg:p-5 md:px-32 lg:w-full'>
             <h1 className='text-mainColor text-xl font-semibold'>About Me</h1>
-            <p className='text-lightColor  lg:text-justify text-lg leading-8 md:leading-9'>
+            <p className='text-lightColor  lg:text-justify text-md leading-8 md:leading-9'>
               A <span className='text-mainColor'>self-motivated</span> and <span className='text-mainColor'>enthusiastic</span> individual IT graduate from
               Universidad de Manila, equipped with a diverse skill set in 
               <span className='text-mainColor'> communication</span>, <span className='text-mainColor'>collaboration</span>, and <span className='text-mainColor'>analytical thinking</span>. Committed to 
@@ -53,66 +53,65 @@ const Portfolio = () => {
             <div className='mt-4 w-full flex flex-row flex-wrap gap-6 justify-center p4 md:p-0 md:gap-16 md:justify-normal'>
               <img 
                 src='../src/image/html-5.png'
-                className='w-16'
+                className='w-14'
                 alt='HTML 5'
               />
               <img 
                 src='../src/image/css-3.png'
-                className='w-16'
+                className='w-14'
                 alt='CSS 3'
               />
               <img 
                 src='../src/image/js.png'
-                className='w-16'
+                className='w-14'
                 alt='JavaScript'
               />
               <img 
                 src='../src/image/php.png'
-                className='w-16'
+                className='w-14'
                 alt='PHP'
               />
               <img 
                 src='../src/image/sql-server.png'
-                className='w-16'
+                className='w-14'
                 alt='SQL'
               />
               <img 
                 src='../src/image/react.png'
-                className='w-16'
+                className='w-14'
                 alt='React JS'
               />
               <img 
                 src='../src/image/tailwind.png'
-                className='w-16'
+                className='w-14'
                 alt='Tailwind Css'
               />
               <img 
                 src='../src/image/c-sharp.png'
-                className='w-16'
+                className='w-14'
                 alt='C#'
               />
               <img 
                 src='../src/image/wordpress.png'
-                className='w-16'
+                className='w-14'
                 alt='Wordpress'
               />
               <img 
                 src='../src/image/elementor.png'
-                className='w-16'
+                className='w-14'
                 alt='Elementor'
               />
               <img 
                 src='../src/image/github.png'
-                className='w-16'
+                className='w-14'
                 alt='GitHub'
               />
               <img 
                 src='../src/image/git.png'
-                className='w-16'
+                className='w-14'
                 alt='Git'
               />
             </div>
-            
           </div>
         </section>
     </main>

@@ -14,13 +14,12 @@ const NavLinks = () => {
 
     return (
     <>
-        <NavLink to="#Home" smooth>HOME</NavLink>
-        <NavLink to="#aboutMe" smooth>ABOUT ME</NavLink>
-        <NavLink to="/project">PROJECT</NavLink>
-        <NavLink to="/contact">CONTACT</NavLink>
-        <button onClick={handleClick}>{mode ? <MdOutlineDarkMode /> : <MdLightMode /> }
-            
-        </button>
+        <NavLink to="#Home" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>HOME</NavLink>
+        <NavLink to="#aboutMe" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>ABOUT ME</NavLink>
+        <NavLink to="#expirience" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>EXPIRIENCE</NavLink>
+        <NavLink to="/project" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>PROJECT</NavLink>
+        <NavLink to="/contact" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>CONTACT</NavLink>
+        <button onClick={handleClick}>{mode ? <MdOutlineDarkMode /> : <MdLightMode /> }</button>
     </>
     );
 };
@@ -34,7 +33,7 @@ const Navbar = () => {
   return (
     <>
     <header className='flex flex-wrap justify-center bg-white w-full'>
-        <nav className='flex  h-24 items-center justify-between w-5/6 z-10 '>
+        <nav className='flex  h-24 items-center justify-between w-11/12 z-10 '>
             <NavLink to="/">
                 <img 
                     src='../src/image/infinityrydev-high-resolution-logo-transparent.png' 
@@ -47,7 +46,7 @@ const Navbar = () => {
                     alt='Mobile Logo'
                 />
             </NavLink>
-            <div className='hidden lg:flex gap-14'>
+            <div className='hidden lg:flex gap-12'>
                 <NavLinks />
             </div>
             <div className='lg:hidden'>
