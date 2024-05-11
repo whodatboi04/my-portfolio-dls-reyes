@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
@@ -8,7 +9,10 @@ export default {
       'tBlack': '#1F1F29',
       'lightColor': '#89939E',
       'tWhite': '#fff',
-      'lightGreen': '#8EB380'
+      'lightGreen': '#8EB380',
+      'white': '#FAF9F6',
+      'dark': '#262636',
+      'navDark': '#191921',
     },
   },
   plugins: [],

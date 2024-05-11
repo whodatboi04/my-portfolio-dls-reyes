@@ -6,14 +6,16 @@ import { MdDownload } from "react-icons/md";
 
 
 const Portfolio = () => {
+
   return (
-    <main className='flex flex-col justify-center items-center'>
+    <div className=''>
+      <main className='flex flex-col justify-center items-center dark:bg-dark'>
         {/* Home */}
-        <section className='flex flex-col-reverse items-center justify-center lg:mt-32 lg:flex-row lg:justify-between lg:w-3/4 lg:h-full'id='Home'>
+        <section className='flex flex-col-reverse items-center justify-center lg:mt-32 lg:flex-row lg:justify-between lg:w-3/4 lg:h-full mt-10'id='Home'>
           <div>
-            <h3 className='text-xs md:text-sm font-bold text-mainColor text-center lg:text-left mt-8'>FRONT-END DEVELOPER</h3>
-            <h1 className='text-4xl md:text-5xl lg:text-7xl font-bold text-center lg:text-left'>Hello, my name <br/> is <span className='text-mainColor'>Ryan Mark</span></h1>
-            <p className='text-sm md:text-lg text-center lg:text-left text-lightColor mt-2'>an aspiring developer with passion for <br/> design,innovation, technologies
+            <h3 className='text-xs md:text-sm font-bold text-mainColor text-center lg:text-left mt-8 dark:text-lightGreen'>FRONT-END DEVELOPER</h3>
+            <h1 className='text-4xl md:text-5xl lg:text-7xl font-bold text-center lg:text-left dark:text-white'>Hello, my name <br/> is <span className='text-mainColor dark:text-lightGreen'>Ryan Mark</span></h1>
+            <p className='text-sm md:text-lg text-center lg:text-left text-lightColor mt-2 dark:text-white'>an aspiring developer with passion for <br/> design,innovation, technologies
             </p>
             <div className='flex flex-col lg:flex-row gap-4 mt-6  items-center'>
               <button className='bg-mainColor w-52 p-2 rounded-full flex justify-center items-center gap-3 text-tWhite'>Contact me <MdOutlineMail color='#fff' size={20}/></button>
@@ -41,15 +43,15 @@ const Portfolio = () => {
             />
           </div>
           <div className='flex flex-col mt-8 lg:jutify-center px-5 lg:p-5 md:px-32 lg:w-full'>
-            <h1 className='text-mainColor text-xl font-semibold'>About Me</h1>
-            <p className='text-lightColor  lg:text-justify text-md leading-8 md:leading-9'>
-              A <span className='text-mainColor'>self-motivated</span> and <span className='text-mainColor'>enthusiastic</span> individual IT graduate from
+            <h1 className='text-mainColor text-xl font-semibold dark:text-lightGreen'>About Me</h1>
+            <p className='text-lightColor  lg:text-justify text-md leading-8 md:leading-9 dark:text-white'>
+              A <span className='text-mainColor dark:text-lightGreen'>self-motivated</span> and <span className='text-mainColor dark:text-lightGreen'>enthusiastic</span> individual IT graduate from
               Universidad de Manila, equipped with a diverse skill set in 
-              <span className='text-mainColor'> communication</span>, <span className='text-mainColor'>collaboration</span>, and <span className='text-mainColor'>analytical thinking</span>. Committed to 
+              <span className='text-mainColor dark:text-lightGreen'> communication</span>, <span className='text-mainColor dark:text-lightGreen'>collaboration</span>, and <span className='text-mainColor dark:text-lightGreen'>analytical thinking</span>. Committed to 
               continuous learning, I thrive on exploring new horizons for personal 
               and professional growth.
             </p>
-            <h1 className='text-mainColor text-xl font-semibold mt-4'>Skills</h1>
+            <h1 className='text-mainColor text-xl font-semibold mt-4 dark:text-lightGreen'>Skills</h1>
             <div className='mt-4 w-full flex flex-row flex-wrap gap-6 justify-center p4 md:p-0 md:gap-16 md:justify-normal'>
               <img 
                 src='../src/image/html-5.png'
@@ -114,7 +116,9 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-    </main>
+      </main>
+    </div>
+    
   )
 }
 

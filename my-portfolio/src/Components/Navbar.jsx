@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { HashLink as NavLink } from 'react-router-hash-link'
 import { FaBars, FaTimes} from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
@@ -8,19 +8,27 @@ import { MdOutlineDarkMode } from "react-icons/md";
 const NavLinks = () => {
     const [mode, setMode] = useState(false);
 
+    useEffect(() => {
+        if(mode === true){
+            document.documentElement.classList.add("dark");
+        }else{
+            document.documentElement.classList.remove("dark");
+        }
+    }, [mode]);
+
     const handleClick = () =>{
-        setMode(!mode);
+        setMode(mode === false ? true : false);
     }
 
     return (
-    <>
-        <NavLink to="#Home" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>HOME</NavLink>
-        <NavLink to="#aboutMe" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>ABOUT ME</NavLink>
-        <NavLink to="#expirience" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>EXPIRIENCE</NavLink>
-        <NavLink to="/project" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>PROJECT</NavLink>
-        <NavLink to="/contact" smooth className='nav-link hover:text-mainColor hover:border-b-2 hover:border-mainColor'>CONTACT</NavLink>
+    <div className='flex gap-12 flex-col text-center items-center lg:flex-row dark:text-white'>
+        <NavLink to="#Home" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>HOME</NavLink>
+        <NavLink to="#aboutMe" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>ABOUT ME</NavLink>
+        <NavLink to="#expirience" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>EXPIRIENCE</NavLink>
+        <NavLink to="/project" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>PROJECT</NavLink>
+        <NavLink to="/contact" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>CONTACT</NavLink>
         <button onClick={handleClick}>{mode ? <MdOutlineDarkMode /> : <MdLightMode /> }</button>
-    </>
+    </div>
     );
 };
 
@@ -31,8 +39,8 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     }
   return (
-    <>
-    <header className='flex flex-wrap justify-center bg-white w-full'>
+    <div>
+    <header className='flex flex-wrap justify-center w-full dark:bg-navDark'>
         <nav className='flex  h-24 items-center justify-between w-11/12 z-10 '>
             <NavLink to="/">
                 <img 
@@ -46,11 +54,11 @@ const Navbar = () => {
                     alt='Mobile Logo'
                 />
             </NavLink>
-            <div className='hidden lg:flex gap-12'>
+            <div className='hidden lg:flex '>
                 <NavLinks />
             </div>
             <div className='lg:hidden'>
-                <button onClick={toggledMenu}>{isOpen ? <FaTimes size={20} /> : <FaBars size={20}/>}</button>
+                <button onClick={toggledMenu}>{isOpen ? <FaTimes size={20} className='dark:text-white'/> : <FaBars size={20} className='dark:text-white'/>}</button>
             </div> 
         </nav>
 
@@ -60,7 +68,7 @@ const Navbar = () => {
             </div>
         )}
     </header> 
-    </>
+    </div>
   )
 }
 
