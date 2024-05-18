@@ -39,7 +39,6 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     }
   return (
-    <div>
     <header className='flex flex-wrap justify-center w-full dark:bg-navDark'>
         <nav className='flex  h-24 items-center justify-between w-11/12 z-10 '>
             <NavLink to="/">
@@ -68,7 +67,6 @@ const Navbar = () => {
             </div>
         )}
     </header> 
-    </div>
   )
 }
 
