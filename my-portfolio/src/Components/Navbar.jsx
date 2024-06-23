@@ -19,6 +19,7 @@ const NavLinks = () => {
     const handleClick = () =>{
         setMode(mode === false ? true : false);
     }
+    console.log("the mode is: " + mode);  
 
     return (
     <div className='flex gap-12 flex-col text-center items-center lg:flex-row dark:text-white'>
@@ -38,8 +39,9 @@ const Navbar = () => {
     const toggledMenu = () => {
         setIsOpen(!isOpen);
     }
+    console.log(isOpen);
   return (
-    <header className='flex flex-wrap justify-center w-full dark:bg-navDark'>
+    <header className='flex flex-wrap justify-center w-full dark:bg-dark'>
         <nav className='flex  h-24 items-center justify-between w-11/12 z-10 '>
             <NavLink to="/">
                 <img 
