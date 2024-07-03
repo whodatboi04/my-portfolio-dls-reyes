@@ -42,7 +42,7 @@ const Navbar = () => {
     console.log(isOpen);
   return (
     <header className='flex flex-wrap justify-center w-full dark:bg-dark'>
-        <nav className='flex  h-24 items-center justify-between w-11/12 z-10 '>
+        <nav className='flex  h-24 items-center justify-between w-3/4 z-10 p-5'>
             <NavLink to="/">
                 <img 
                     src='../src/image/infinityrydev-high-resolution-logo-transparent.png' 
