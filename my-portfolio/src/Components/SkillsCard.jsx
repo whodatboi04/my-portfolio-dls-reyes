@@ -1,4 +1,9 @@
 import React from 'react'
+import { 
+    FaBrain, 
+    FaCode 
+} from "react-icons/fa";
+
 
 export default function SkillsCard() {
     const frontend = [
@@ -88,7 +93,7 @@ export default function SkillsCard() {
         }
     ]
   return (
-    <div className='flex flex-col gap-8 items-center lg:flex-row md: md:grid-row-2'>
+    <div className='flex flex-col gap-8 items-center lg:flex-row dark:text-white'>
         <div className='border-[1px] border-light w-56 h-72 p-5 rounded-[15px] shadow-md'>
             <div className='flex items-center gap-2 justify-center'>
                 <img src='../src/image/ui-design.png' alt='frontend-logo' className="w-12 lg:w-[29px]"/>
@@ -107,8 +112,8 @@ export default function SkillsCard() {
         </div>
         <div className='border-[1px] border-light w-56 h-72 p-5 rounded-[15px] shadow-md'>
             <div className='flex items-center gap-2 justify-center'>
-                <img src='../src/image/ui-design.png' alt='frontend-logo' className="w-12 lg:w-[29px]"/>
-                <h2 className='text-[16px] text-tBalck font-semibold'>Frontend Skills</h2>
+                <FaCode size={20} className='dark:text-white'/>
+                <h2 className='text-[16px] text-tBalck font-semibold'>Backend Skills</h2>
             </div>
             <div className='grid grid-cols-3'>
                 {backend.map((s,i) =>{
@@ -123,8 +128,8 @@ export default function SkillsCard() {
         </div>
         <div className='border-[1px] border-light w-56 h-72 p-5 rounded-[15px] shadow-md'>
             <div className='flex items-center gap-2 justify-center'>
-                <img src='../src/image/ui-design.png' alt='frontend-logo' className="w-12 lg:w-[29px]"/>
-                <h2 className='text-[16px] text-tBalck font-semibold'>Frontend Skills</h2>
+                <FaBrain size={20} className='dark:text-white'/>
+                <h2 className='text-[16px] text-tBalck font-semibold'>Other Skills</h2>
             </div>
             <div className='grid grid-cols-3'>
                 {others.map((s,i) =>{

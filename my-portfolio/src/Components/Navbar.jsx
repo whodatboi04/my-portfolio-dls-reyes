@@ -25,8 +25,8 @@ const NavLinks = () => {
     <div className='flex gap-12 flex-col text-center items-center lg:flex-row dark:text-white'>
         <NavLink to="#Home" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>HOME</NavLink>
         <NavLink to="#aboutMe" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>ABOUT ME</NavLink>
+        <NavLink to="#project" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>PROJECT</NavLink>
         <NavLink to="#expirience" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>EXPIRIENCE</NavLink>
-        <NavLink to="/project" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>PROJECT</NavLink>
         <NavLink to="/contact" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>CONTACT</NavLink>
         <button onClick={handleClick}>{mode ? <MdLightMode /> : <MdOutlineDarkMode /> }</button>
     </div>
@@ -40,7 +40,7 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     }
     console.log(isOpen);
-  return (
+    return (
     <header className='flex flex-wrap justify-center w-full dark:bg-dark'>
         <nav className='flex  h-24 items-center justify-between w-3/4 z-10 p-5'>
             <NavLink to="/">
