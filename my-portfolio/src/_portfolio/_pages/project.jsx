@@ -28,7 +28,7 @@ export default function project() {
             Projects
         </h1>
         <Swiper
-            
+                
             spaceBetween={30}
             centeredSlides={true}
             pagination={{

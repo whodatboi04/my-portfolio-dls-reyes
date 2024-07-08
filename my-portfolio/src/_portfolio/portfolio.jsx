@@ -2,6 +2,7 @@
 import AboutMe from "./_pages/aboutme";
 import Home from "./_pages/home";
 import Project from "./_pages/project";
+import Experience from "./_pages/experience";
 
 export default function portfolio() {
 
@@ -10,6 +11,7 @@ export default function portfolio() {
             <Home/>
             <AboutMe/>
             <Project/>
+            <Experience/>
         </main>
     )
 }

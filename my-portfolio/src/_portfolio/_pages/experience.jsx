@@ -1,0 +1,47 @@
+import React from 'react'
+
+export default function experience() {
+  return (
+    <div className='my-10 w-3/4' id='experience'>
+        <h1 className='text-mainColor text-xl font-semibold text-center dark:text-lightGreen'>
+            Experiences
+        </h1>
+        <div className=''>
+            <div className='mt-10 flex justify-center p-5'>
+                <ul className='pr-10'>
+                    <li className='flex flex-col items-center lg:items-start lg:flex-row'>
+                        <img 
+                            src='../src/image/pcp-logo.png' 
+                            alt='Philippine College of Physicians'
+                            className='w-20'
+                        />
+                        <div className='ml-5'>
+                            <h2 className='text-dark text-md font-extrabold'>PHILIPPINE COLLEGE OF PHYSICIANS</h2>
+                            <p>IT Programmer</p>
+                            <p className='text-lightColor text-sm'>09/2023 - Present</p>
+                        </div> 
+                    </li>
+                </ul>
+                <ul className='h-[300px] px-5 relative flex flex-col justify-between   items-center overflow-hidden'>
+                    <li className='bg-mainColor rounded-full w-4 h-4  relative after:content-[""] after:absolute after:bg-mainColor after:w-[5px] after:left-[5px] after:h-screen after:-z-10'></li>
+                    <li className='bg-mainColor rounded-full w-4 h-4 z-10 relative'></li>
+                </ul>
+                <ul className='flex flex-col-reverse pl-10'>
+                    <li className='flex flex-col items-center lg:flex-row-reverse lg:items-start'>
+                    <img 
+                            src='../src/image/deped-logo.png' 
+                            alt='Philippine College of Physicians'
+                            className='w-20'
+                        />
+                        <div className='mr-5'>
+                            <h2 className='text-dark text-md font-extrabold text-right'>Department Of Education Manila</h2>
+                            <p className='text-right'>IT Specialist</p>
+                            <p className='text-lightColor text-sm text-right'>02/2023 - 07/2023</p>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  )
+}

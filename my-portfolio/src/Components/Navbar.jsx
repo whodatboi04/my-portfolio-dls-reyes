@@ -26,7 +26,7 @@ const NavLinks = () => {
         <NavLink to="#Home" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>HOME</NavLink>
         <NavLink to="#aboutMe" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>ABOUT ME</NavLink>
         <NavLink to="#project" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>PROJECT</NavLink>
-        <NavLink to="#expirience" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>EXPIRIENCE</NavLink>
+        <NavLink to="#experience" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>EXPERIENCE</NavLink>
         <NavLink to="/contact" smooth className='hover:text-mainColor hover:border-b-2 hover:border-mainColor transition ease-in-out delay-150'>CONTACT</NavLink>
         <button onClick={handleClick}>{mode ? <MdLightMode /> : <MdOutlineDarkMode /> }</button>
     </div>
