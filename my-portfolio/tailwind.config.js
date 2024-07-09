@@ -14,6 +14,7 @@ export default {
       'dark': '#262636',
       'navDark': '#191921',
       'light': '#F5F5F5',
+      'darkFooter': '#2E2E2E',
     },
   },
   plugins: [],

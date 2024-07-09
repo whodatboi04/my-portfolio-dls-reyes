@@ -7,36 +7,36 @@ export default function experience() {
             Experiences
         </h1>
         <div className=''>
-            <div className='mt-10 flex justify-center p-5'>
+            <div className='mt-10 flex justify-center h-[400px]'>
                 <ul className='pr-10'>
                     <li className='flex flex-col items-center lg:items-start lg:flex-row'>
                         <img 
                             src='../src/image/pcp-logo.png' 
                             alt='Philippine College of Physicians'
-                            className='w-20'
+                            className='w-14 mb-2 lg:w-20'
                         />
                         <div className='ml-5'>
-                            <h2 className='text-dark text-md font-extrabold'>PHILIPPINE COLLEGE OF PHYSICIANS</h2>
-                            <p>IT Programmer</p>
-                            <p className='text-lightColor text-sm'>09/2023 - Present</p>
+                            <h2 className='text-dark text-[10px] font-extrabold lg:text-sm'>PHILIPPINE COLLEGE OF PHYSICIANS</h2>
+                            <p className=' text-[10px] lg:text-sm'>IT Programmer</p>
+                            <p className='text-lightColor text-[9px] lg:text-sm'>09/2023 - Present</p>
                         </div> 
                     </li>
                 </ul>
-                <ul className='h-[300px] px-5 relative flex flex-col justify-between   items-center overflow-hidden'>
+                <ul className='h-[320px] px-5 relative flex flex-col justify-between mt-2 items-center overflow-hidden'>
                     <li className='bg-mainColor rounded-full w-4 h-4  relative after:content-[""] after:absolute after:bg-mainColor after:w-[5px] after:left-[5px] after:h-screen after:-z-10'></li>
                     <li className='bg-mainColor rounded-full w-4 h-4 z-10 relative'></li>
                 </ul>
                 <ul className='flex flex-col-reverse pl-10'>
                     <li className='flex flex-col items-center lg:flex-row-reverse lg:items-start'>
-                    <img 
+                        <img 
                             src='../src/image/deped-logo.png' 
                             alt='Philippine College of Physicians'
-                            className='w-20'
+                            className='w-14 mb-2 lg:w-20'
                         />
                         <div className='mr-5'>
-                            <h2 className='text-dark text-md font-extrabold text-right'>Department Of Education Manila</h2>
-                            <p className='text-right'>IT Specialist</p>
-                            <p className='text-lightColor text-sm text-right'>02/2023 - 07/2023</p>
+                            <h2 className='text-dark text-[10px] font-extrabold text-right lg:text-sm'>Department Of Education Manila</h2>
+                            <p className='text-right text-[10px] lg:text-sm'>IT Specialist</p>
+                            <p className='text-lightColor text-[9px] lg:text-sm text-right'>02/2023 - 07/2023</p>
                         </div> 
                     </li>
                 </ul>
