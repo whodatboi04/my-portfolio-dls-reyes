@@ -1,13 +1,12 @@
 import React from 'react'
 import SkillsCard from '../../Components/SkillsCard'
-import image from ".../src/image/my-img-front.png"
 export default function aboutme() {
     
   return (
         <section className='flex flex-col  p-5 w-3/4 mt-10 lg:flex-row' id='aboutMe'>
             <div className='flex items-center w-3/4 m-auto lg:m-0'>
                 <img 
-                    src={image} 
+                    src="../src/image/my-img-front.png" 
                     className='rounded-full mt-10 min-w-72 m-auto md:w-[20rem] lg:m-0 '
                     alt='My Picture'
                 />
