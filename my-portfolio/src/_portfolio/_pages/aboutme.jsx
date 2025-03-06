@@ -1,6 +1,6 @@
 import React from 'react'
 import SkillsCard from '../../Components/SkillsCard'
-import image from "../src/image/my-img-front.png"
+import image from ".../src/image/my-img-front.png"
 export default function aboutme() {
     
   return (
